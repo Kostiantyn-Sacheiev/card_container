@@ -1,0 +1,151 @@
+body {
+    background-color: #f0f8ff;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #003366;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.navbar {
+    background-color: #003366;
+    padding: 10px 20px;
+}
+
+.navbar a {
+    color: #ffffff;
+    margin-right: 15px;
+}
+
+.navbar a:hover {
+    color: #cce6ff;
+}
+
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #cce6ff;
+    border-radius: 5px;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #003366;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cce6ff;
+    border-radius: 3px;
+}
+
+form input[type="submit"] {
+    background-color: #0066cc;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #005bb5;
+}
+
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #cce6ff;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+
+.alert {
+    padding: 15px;
+    background-color: #e6f2ff;
+    border: 1px solid #cce6ff;
+    color: #003366;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #0066cc;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.button:hover {
+    background-color: #005bb5;
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    color: #0066cc;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: #0066cc;
+    color: white;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #cce6ff;
+    border-radius: 5px;
+}
+
+
+.footer {
+    background-color: #003366;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

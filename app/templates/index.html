@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Welcome to Your Dictionary!</h1>
+    <p>This is your personal space to add and manage your vocabulary.</p>
+    <a href="{{ url_for('add_card') }}" class="button">Add Your First Card</a>
+{% endblock %}

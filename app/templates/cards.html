@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2>Your Cards</h2>
+    {% for card in cards %}
+        <div class="card">
+            <h3>{{ card.word }}</h3>
+            <p><strong>Translation:</strong> {{ card.translation }}</p>
+        </div>
+    {% else %}
+        <p>You have no cards yet. <a href="{{ url_for('add_card') }}">Add a new card</a>.</p>
+    {% endfor %}
+
+    {% if prev_url or next_url %}
+        <div class="pagination">
+            {% if prev_url %}
+                <a href="{{ prev_url }}">&laquo; Previous</a>
+            {% endif %}
+            {% if next_url %}
+                <a href="{{ next_url }}">Next &raquo;</a>
+            {% endif %}
+        </div>
+    {% endif %}
+{% endblock %}
