@@ -2,9 +2,8 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField
 from wtforms.validators import DataRequired, EqualTo, ValidationError
 from app.models import User
-
-#name: Kostja
-#pass: YourDictionary
+from flask import render_template
+from app import app
 
 class RegistrationForm(FlaskForm):
     username = StringField('Username', validators=[DataRequired()])
@@ -26,3 +25,7 @@ class CardForm(FlaskForm):
     word = StringField('Word', validators=[DataRequired()])
     translation = StringField('Translation', validators=[DataRequired()])
     submit = SubmitField('Add Card')
+
+@app.errorhandler(500)
+def internal_error(error):
+    return render_template('500.html'), 500
