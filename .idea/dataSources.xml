@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="card_container_base@dpg-ct7d5a52ng1s73cdebm0-a.frankfurt-postgres.render.com" uuid="39da5603-7c36-4803-8b8e-5f40411dedcd">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://dpg-ct7d5a52ng1s73cdebm0-a.frankfurt-postgres.render.com:5432/card_container_base</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+  </component>
+</project>
