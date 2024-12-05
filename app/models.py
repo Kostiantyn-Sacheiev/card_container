@@ -25,6 +25,7 @@ class User(UserMixin, db.Model):
 class Card(db.Model):
     __tablename__ = 'cards'
     __table_args__ = {'schema': 'public'}
+
     id = db.Column(db.Integer, primary_key=True)
     word = db.Column(db.String(128), nullable=False)
     translation = db.Column(db.String(128), nullable=False)
