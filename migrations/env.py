@@ -21,7 +21,7 @@ target_metadata = db.metadata
 
 def run_migrations_offline():
     """Run migrations in 'offline' mode."""
-    url = app.config.get('SQLALCHEMY_DATABASE_URI')
+    url = app.config.get('DATABASE_URL')
     if not url:
         raise ValueError("Database URL not found in app configuration.")
     context.configure(
